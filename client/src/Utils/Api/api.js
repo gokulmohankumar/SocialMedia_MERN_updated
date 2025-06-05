@@ -1,7 +1,7 @@
 import axios from 'axios'
 
  export const API=axios.create({
-    "https://socialmedia-mern-updated.onrender.com/api/v1"
+    baseURL: "https://socialmedia-mern-updated.onrender.com/api/v1"
 })
  
   export const getTimeLinePost=(username)=>{return API.get(`posts/getTimelinePosts/${username}`)};
